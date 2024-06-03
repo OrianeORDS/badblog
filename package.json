@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "babel src -d lib",
+    "start": "yarn test", 
     "test": "jest"
   },
   "keywords": [
