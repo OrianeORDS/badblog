@@ -5,7 +5,7 @@
  import bodyParser from "body-parser";
  import { dirname } from "path";
  import { fileURLToPath } from "url";
- 
+  
  
 // XXXXXXXXX CONSTANTES ET MIDDLEWARE
   const app = express();
