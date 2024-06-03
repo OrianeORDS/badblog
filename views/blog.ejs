@@ -1,0 +1,40 @@
+<%- include("partials/header.ejs") %>
+
+<section ID="blog">
+ <div>
+    <br> 
+    <h1> Welcome to the Bad Blog Articles 📰🏸
+    </h1>
+  </div>
+ 
+  </br>
+
+
+ 
+    <%  dataArticles.forEach((data) => { %>
+      <div>
+      </br> 
+        <h2> <%= data.title %></h2>
+        <br> 
+        <p class="hidden"> Here is the article ident number  <%= data.artID %></p> 
+        <p> Article written by : <%= data.author %> on <%= data.date %> </p> 
+        <p> <%= data.body %></p>
+        <form action="/blog/edit/<%=data.artID%>" method="post"> 
+        <button type="submit"></form> Edit</button>
+        </form>
+      </br>
+      </br>
+
+        
+      </div>
+
+    <% }) %>
+
+
+     
+</section>
+
+
+
+  <%- include("partials/footer.ejs") %>
+

@@ -1,0 +1,36 @@
+<%- include("partials/header.ejs") %>
+ <section> 
+    <div ID="authent"> 
+      <h1> Authentification 🔐 </h1>
+        <br> 
+      
+          <p> In order to access the "articles' factory" (aka the bad blog's editor) you are summoned to answer a secret question !  </p>
+          <br> 
+        
+          <h3> How is called a badminton player in french ? </h3>
+          <br> 
+          
+          <form action="/password/submit" method="POST">
+              <input type="text" name="password" placeholder="Password">
+              <input type="submit" value="OK">
+          </form>
+          <br> 
+          
+
+          <% if (password !== "wrong" && password !=="badiste")  { %>
+            <p> Sorry, the secret answer is NOT <%= password %> </p>
+            <p> 🗨️Try again ! Hint : the word counts seven letters, and has been registered on the Larousse dictionnary in 2024 ! </p1>
+    </div>
+  </section>
+
+      <% } %>
+
+
+
+     
+
+
+
+  <%- include("partials/footer.ejs") %>
+
+

@@ -1,0 +1,61 @@
+<%- include("partials/header.ejs") %>
+
+
+<section ID="editor"> 
+
+  <div>
+    <h1> Article's revision 🛠️ </h1>
+    <br>
+        <h2> Feel free to enhance the article ! </h2>
+        <br>       
+
+        <form action="/editor/submit/<%= dataToEdit.artID %>" method="POST">
+              <div class="row">
+                <div class="col-20">
+                  <label for="Author">Your name</label>
+                </div>
+                <div class="col-80">
+                  <input type="text" id="author" name="author" value="<%=dataToEdit.author%>">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-20">
+                  <label for="title"> Title </label>
+                </div>
+                <div class="col-80">
+                  <input type="text" id="title" name="title" value="<%= dataToEdit.title %>">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-20">
+                  <label for="body">Subject</label>
+                </div>
+                <div class="col-80">
+                  <textarea id="body" name="body" style="height:200px"> <%= dataToEdit.body %> </textarea>
+                </div>
+              </div>
+              <input class= "hidden" type= "text" name="Index" placeholder= "<%=dataIndex%>" > <%# HIDDEN %> 
+              <input class="hidden" type= "text" name="ID" placeholder= "<%=dataToEdit.artID%>"> <%# HIDDEN %>
+              <br>
+              <div class="row">
+                <button type="submit" value="Save!"> Submit </button>
+              </div>
+              <p .hidden> Date :  <%= new Date().toDateString() %> </p>
+   
+
+            <p class="hidden"> Date :  <%= new Date().toDateString() %> </p><%# HIDDEN %>
+
+
+        </form>
+  </div>
+
+
+</section> 
+      
+
+
+     
+
+
+
+  <%- include("partials/footer.ejs") %>

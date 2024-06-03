@@ -1,0 +1,65 @@
+<%- include("partials/header.ejs") %>
+
+<section> 
+
+    <div>
+
+        <h1> Article Factory 🏭 </h1>
+            <h2> Try and write the best bad article ever ! </h2>
+            
+
+            <form action="/writearticle/submit" method="POST">
+                <div class="row">
+                  <div class="col-20">
+                    <label for="Author">Your name</label>
+                  </div>
+                  <div class="col-80">
+                    <input type="text" id="author" name="author" placeholder="Your name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-20">
+                    <label for="title"> Title </label>
+                  </div>
+                  <div class="col-80">
+                    <input type="text" id="title" name="title" placeholder="Title">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-20">
+                    <label for="body">Subject</label>
+                  </div>
+                  <div class="col-80">
+                    <textarea id="body" name="body" placeholder="Write something..." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <button type="submit" value="submit"> Submit </button>
+                </div>
+                <p .hidden> Date :  <%= new Date().toDateString() %> </p>
+                </form>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</section>
+      
+
+
+     
+
+
+
+  <%- include("partials/footer.ejs") %>

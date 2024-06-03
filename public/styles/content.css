@@ -1,0 +1,208 @@
+/* recap couleurs du design :
+
+        light-purple : #D4C3D8          rgba(212, 195, 216, 1)
+        medium-purple : #9783B4         rgba(151, 131, 180, 1)       
+        intense-purple : #402666        rgba(64, 38, 102, 1)       
+
+        light-green : #DEE8E3           rgba(222, 232, 227, 1)
+        medium-green: #7ED6AC           rgba(126, 214, 172, 1)
+        intense-green : #30646B         rgba(48, 100, 107, 1)
+*/
+
+
+/*  font and coulors */
+        body {
+                background:#402666 ; }
+        
+
+        h1 {
+                font-size: 3rem;
+                padding-top: 1vw;
+                padding-bottom: 2vw;  
+        }
+        h2{
+                font-size: 2.2rem ; 
+        }
+        h3{ 
+                font-size: 1.3rem; 
+        }
+
+        html {
+                font-family: "Oswald", sans-serif;
+                font-optical-sizing: auto; 
+                font-style: normal;
+                font-size: 1.5vw; 
+        }
+        
+        main {
+                width: 100%;
+                min-height: 95vh;
+                margin: 0;
+                align-content: center;
+                justify-content: center;
+                color:  #DEE8E3 ;
+        }
+
+        p{
+                font-size: 1rem;
+        }
+        section {
+                width: 100vw;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding : 1vw ; 
+        }
+
+
+/* forms and inputs */ 
+        button {
+                width: 100px;
+                justify-content: center;
+                margin-left: 0; 
+        }
+        button:hover {
+                background-color:#7ED6AC;
+               }
+
+        label, input, button, textarea  {
+                font-size: 0.9rem;
+                padding: 1rem;
+                cursor: pointer;
+                padding: 6px;
+                margin : 6px;    
+        }
+        input, textarea {
+                width: 100%;
+                border-radius: 5px;
+        }
+              .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+              }
+              
+              .col-20 {
+                float: left;
+                width: 20%;
+                margin-top: 6px;
+              }
+              
+              .col-80 {
+                float: left;
+                width: 80%;
+                margin-top: 6px;
+              }
+              
+              /* Clear floats after the columns */
+              .row::after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+              
+              /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+              @media screen and (max-width: 600px) {
+                .col-25, .col-75, input[type=submit] {
+                  width: 100%;
+                  margin-top: 0;
+                }
+              }
+
+/* page AUTHENTIFICATION */
+
+        #authent input, #authent button {
+                display : inline-block ;
+        }
+        #authent { 
+                width: 52%;
+                margin: auto;
+                background-color: #30646B;
+                background-color: rgba(151, 131, 180, 0.25) ; 
+                padding: 2vw; 
+                border-radius: 5%;  
+        }
+        
+
+/* page BLOG */ 
+        #blog div {
+                display : flex; 
+                flex-direction:column; 
+                justify-content: center; 
+                align-items: flex-start;
+                width : 85%;                  
+        }
+        #blog * { 
+                display : flex; 
+        }
+
+/* page HOME */ 
+
+        #home div {
+                display : flex; 
+                flex-direction:column; 
+                justify-content: center; 
+                align-items: flex-start;
+                width : 85%;                  
+        }
+
+        .home > div {
+                display: inline-block ; 
+        }
+
+        #home img { 
+                float: inline-start;
+                width: 35%;
+                padding: 2vw;
+                aspect-ratio: 700/800;
+                padding: 0; 
+                padding-right: 2vw ;
+        }
+
+       div.home   {
+                display : inline-flex ; 
+                flex-direction:row-reverse !important; 
+        }
+
+
+
+/* elements behaviours */ 
+
+        .hidden {
+                display: none !important;
+              }
+
+
+
+
+/* header  and footer */ 
+        footer {
+                position: absolute;
+                padding : 1vw ;
+                padding-left : 2vw ; 
+                width : 100% ; 
+        }
+
+        header,footer {
+                font-family: "Oswald", sans-serif;
+                background-color: #30646B ;
+                color:  #DEE8E3 ;
+        }
+
+        header a{
+                color:  #DEE8E3 ; 
+        }
+/* XXXXXXXX      MEDIA QUERIES      XXXXXXXX */ 
+
+        @media (max-width : 600px) {
+                #authent { 
+                        width: 82%;
+                }
+                html {
+                        font-size: 2.5vw; 
+                }
+
+        }

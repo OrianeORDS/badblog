@@ -1,0 +1,84 @@
+<%- include("partials/header.ejs") %>
+
+<section ID="home"> 
+  <div> 
+   <br>
+   <h1> Welcome to Oriane's bad blog </h1>
+   <br>
+  </div>
+
+  
+  <div>  
+    <h2> About the Bad Blog ? </h2>
+      <div class="home">
+        <p>Hi, I'm Oriane. I live in Saint Denis, France, where I play badminton twice a week (only for fun). I'm also learning intensivly web developpement. 
+          This project enables me to connect the two subjects, hence the name 'Bad blog' !
+          <br>
+          <br>
+
+          The main fonctionalities of the blog are to allow a user to publish, modificate and delete blog articles, using node and ejs. 
+          Since there is no database related to it, the data will not be saved between two visits of the blog.
+          <br>
+          <br>
+
+          I hoppe I don't desappoint you if I tell you that the bad blog is not really about badminton. It's more about  how to do a blog. 
+          Yeah I know, the title and the previous section might have given you the wrong impression. However, let's talk about how I worked on it, from scratch !
+        </p>
+          <img src="/images/mouse0.png" alt="Oriane's portrait with a bad raquete"> 
+      </div>
+  </div>
+
+
+
+  <div>
+    <h2> Conception from scratch</h2>
+    <div class="home">
+      <div>
+          <p> This project was built as part of Udemy Developpement Bootcamp (from dr. Anglea Yu).  
+            It required ground knowledge of 
+            <ul>
+              <li> frontend developpement basics :</li> 
+                <ol>
+                  <li>html, css (including bootstrap and flexblox) </li>>
+                  <li> notions of web design </li>
+                  <li> Javascript and DOM tools </li> 
+                </ol>
+              <li> a backend developpement tool kit including :</li>
+                <ol> 
+                    <li> Unix command line  with a bash terminal</li>
+                    <li> Node as a js runtime environnement, and NPM for the additional packages management</li>
+                    <li> EJS (embede Javascript) for templating the datas trew the html files  </li>
+                </ol>
+            </ul>
+            One strenght of the project is to rely only on the trio html/css/js. Node (js runtime environnement) enables writing the code from frontend to backend thanks to javascript only. 
+            And though at this point no other programmation language is required.   
+          </p>
+      </div>
+      <img src="/images/schema01.png" alt="notes taken from the conception process"> 
+    </div>
+  </div>
+
+
+  <div>
+    <h2> Remaining to do</h2>
+    <div class="home">
+      <div>
+      <p> 
+        <ul> 
+          <li>An article about the data flow threw the web application : from backend to frontend and backwards !</li>
+          <li>A delete Button => to delete articles </li>
+          <li> Add fotos to the new blog posts </li>
+          <li>Test and validate the data passed threw the form (NPM validator package)</li>
+          <li>Improve the treatment of Dates (NPM luxon package) + in case of editing an article show the initial + the last modif date  </li>
+          <li>Add a few more "get routes" for redirection in case of refreshing a page opened after clickin on a button</li>
+          <li> Add an authentification step on the "post > blog/edit" and the "blog/delete" route. </li>
+          <li> Enhance the styling and add more media-queries</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+
+    </section>
+
+  <%- include("partials/footer.ejs") %>
