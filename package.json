@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "babel src -d lib",
-    "start": "yarn test", 
+    "start": "webpack-dev-server --mode development", 
     "test": "jest"
   },
   "keywords": [
