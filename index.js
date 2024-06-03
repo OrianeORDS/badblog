@@ -5,11 +5,13 @@
  import bodyParser from "body-parser";
  import { dirname } from "path";
  import { fileURLToPath } from "url";
- 
+ import {yarn} from "yarn" 
+
+  // yarn run test 
  
 // XXXXXXXXX CONSTANTES ET MIDDLEWARE
   const app = express();
-  const port = 3000;
+  const port = 10000;
   const __dirname = dirname(fileURLToPath(import.meta.url));
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(express.static("public"));
